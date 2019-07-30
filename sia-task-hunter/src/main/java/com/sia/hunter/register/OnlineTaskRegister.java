@@ -596,7 +596,8 @@ public class OnlineTaskRegister implements ApplicationListener<ApplicationEvent>
      * @return
      * @throws
      */
-    private void monitorAuth(final String parentPath, final CuratorClient instance) throws Exception {
+    @SuppressWarnings("resource")
+	private void monitorAuth(final String parentPath, final CuratorClient instance) throws Exception {
 
         // 创建treeCache监听器
         TreeCache treeCache = new TreeCache(instance.getCuratorFramework(), parentPath);

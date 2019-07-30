@@ -29,7 +29,10 @@ package com.sia.hunter.exception;
  **/
 public class OnlineTaskException extends Exception {
 
-    public OnlineTaskException(String message) {
+   
+	private static final long serialVersionUID = -4565539766138483362L;
+
+	public OnlineTaskException(String message) {
 
         super(message);
     }

@@ -31,7 +31,9 @@ import org.springframework.web.client.RestClientException;
  **/
 public class OnlineTaskCallerException extends RestClientException {
 
-    private RestClientException restClientException;
+   
+	private static final long serialVersionUID = -2217599443344095632L;
+	private RestClientException restClientException;
     private String body;
 
     public RestClientException getRestClientException() {
